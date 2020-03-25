@@ -1,0 +1,18 @@
+
+.picture{
+    display: grid;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 5px;
+    padding: 0;
+
+    & img{
+        border: $color-primary solid 3px;
+        max-width: 300px;
+        max-height: 260px;
+        margin: 0;
+        padding: 0;    
+        
+
+    }
+}
