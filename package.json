@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.css css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulinaRybak/MyPortfolio.git"
+  },
+  "keywords": [
+    "paulina",
+    "portfolio",
+    "scss"
+  ],
+  "author": "paulina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulinaRybak/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/PaulinaRybak/MyPortfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

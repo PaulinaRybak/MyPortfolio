@@ -5,42 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"/>
     <title>Paulina Rybak Portfolio </title>
 </head>
-<body class="site grid"> 
-    <header class=" grid header">
-        <div class="logo">P</div>
+<body class="container"> 
+    
+    <header class="main-header">
+        
         <nav class="nav">
             <ul class="nav-links">
-                <li><a href="#me">ABOUT ME</a></li>
-                <li><a href="#cv">Curriculum Vitae</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-links-menu"><a href="#me" class="nav-menu-link">About Me</a></li>
+                <li class="nav-links-menu"><a href="#cv" class="menu-nav-link">Skills</a></li>
+                <li class="nav-links-menu"><a href="#portfolio" class="menu-nav-link">Work</a></li>
+                <li class="nav-links-menu"><a href="#contact" class="menu-nav-link">Contact</a></li>
             </ul>
-            <div id="burger">
-                <div class="line1"></div>
-                <div class="line2">MENU</div>
-                <div class="line3"></div>
-            </div>
         </nav>
-        <div id="nav-btn" class="closed"></div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="menu-icon-line"></span>
+            </label>
+            
+        </div>
+        
     </header>
    
-        <div class="grid picture">
-            <img id="picture1" src="redwallphoto.jpg" alt="mi picture on red wall background">
-        </div>
-        <aside class="grid info">Hello I'm Paulina and I'm a Web Designer and Developer!I would like to  </aside>
-        <div class="grid social-icons">
-            <ul class="social top">
+    <main>
+        <section class="home">
+            <div class="home-picture">
+                <img src="redwallphoto.jpg" alt="mi picture on red wall background">
+            </div>
+            <h1 class="home-name">Hello I'm <span>Paulina</span> and I'm a Web Designer and Developer!</h1>
+
+        </section>
+
+        <div class="social-icons">
+            <ul class="social-icons__top">
                 <li><a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/mimka_pr/" target="_blank"></a></li>
                 <li><a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/paulina-rybak-472a94a8/" target="_blank"></a></li>
                 <li><a class="fa fa-github" aria-hidden="true" href="https://github.com/PaulinaRybak" target="_blank"></a></li>
             </ul>
         </div>
+
+        
+        
         <div class="grid about-me" id="me"></div> About Me</div>
-        <div class="grid cv" id="cv">Curriculum Vitae</div>
+        <div class="grid cv" id="cv">Skills</div>
         <div class="grid work" id="work">Work</div>
         <div class="grid contact" id="contact">Contact
             <div>
@@ -52,10 +62,10 @@
                 </form>
             </div>
         </div>
-    
-    <footer class="grid footer">
-        <div class="social-icons">
-            <ul class="social" id="social-footer">
+    </main>
+    <footer class="footer">
+        <div class="footer-social-icons">
+            <ul class="footer-social-icons">
                 <li><a class="fa fa-instagram fafo" aria-hidden="true" href="https://www.instagram.com/mimka_pr/" target="_blank"></a></li>
                 <li><a class="fa fa-linkedin fafo"  aria-hidden="true" href="https://www.linkedin.com/in/paulina-rybak-472a94a8/" target="_blank"></a></li>
                 <li><a class="fa fa-github fafo"  aria-hidden="true" href="https://github.com/PaulinaRybak" target="_blank"></a></li>
@@ -64,7 +74,7 @@
         <p> All rights reserved, created by Paulina Rybak &copy</p>
     </footer>
     
-    <script src="java.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

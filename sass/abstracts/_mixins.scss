@@ -1,0 +1,27 @@
+@mixin flexCenter ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    
+}
+
+@mixin tablet {
+    @media (min-width: $tablet){
+        @content;
+    }
+
+    
+}
+@mixin wide-screen {
+    @media (min-width: $wide-screen) {
+        @content;
+        
+    }
+    
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+    
+}
