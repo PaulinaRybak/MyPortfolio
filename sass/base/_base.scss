@@ -6,17 +6,19 @@
 }
 
 body {
-    // display: grid;
+    display: grid;
     width: 100%;
     background-color: $color-page;
     color: $color-font-light;
+    overflow-x: hidden;
 }
 
-.container{
-    display: grid;
-}
-li{
+// .container{
+//     // display: grid;
+// }
+ul{
     list-style: none;
+    
 }
 a {
     color: $color-font-light;
@@ -27,29 +29,22 @@ a {
 
 
 main{
-    width: 100%;
     padding: 8vh 1vh 1vh 1vh;
-
-    
-
+    width: 100%;
     @include wide-screen{
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
     .social-icons{
-        
-        padding: 0;
-        text-align: center;
         display: inline;
         @include flexCenter(column);
         @include tablet{
+            position: fixed;
             right: 0.75rem;
             top: 25%;
-            position: fixed; 
-             
         }
-        
+        text-align: center;
         &:hover{
             opacity: 0.5;
         }
@@ -65,25 +60,22 @@ main{
         }
 
         a {
+            border: 1px solid $color-primary;
+            border-radius: 5px;   
             color:$color-primary;
-            text-decoration: none;
-            width: 30px;
             height: 30px;
             line-height: 30px;
             margin: 5px;
-            border: 1px solid $color-primary;
-            
+            text-decoration: none;
             transition: ease .3s;
-            border-radius: 5px;   
-           
+            width: 30px;
+            // display: block;
             
             &:hover{
                 color: #f0e1d2;
                 border: 1px solid $color-primary-light;    
             }
-
         }
-
     }
 }
 
@@ -108,16 +100,15 @@ main{
         }
 
         a {
+            border: 1px solid $color-primary;
+            border-radius: 5px; 
             color:$color-primary;
-            text-decoration: none;
-            width: 30px;
             height: 30px;
             line-height: 30px;
             margin: 5px;
-            border: 1px solid $color-primary;
+            text-decoration: none;
             transition: ease .3s;
-            border-radius: 5px;   
-           
+            width: 30px;
             &:hover{
                 color: #f0e1d2;
                 border: 1px solid $color-primary-light;    

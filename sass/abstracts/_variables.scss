@@ -1,16 +1,24 @@
-$color-page: #050100;
 
+//colors
+
+$color-page: #050100;
 $color-primary:#be9979;
 $color-primary-light:#b19b8e;
 $color-secondary: #ddd3ca;
 $color-font-dark: #000;
 $color-font-light: #fff;
+
+
+//fonts
+
 $font-weights: (
     "regular":400,
     "medium":500,
     "bold": 700
 );
 
-$tablet: 600px;
 
-$wide-screen: 900px;
+//screen
+
+$tablet: 600px;
+$wide-screen: 767px;

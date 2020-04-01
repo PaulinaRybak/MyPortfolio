@@ -1,8 +1,9 @@
 .home{
-    
+    display: grid;
     height: 100%;
     overflow: hidden;
-
+    @include flexCenter(column);
+    
     background: 
         linear-gradient(
             to right,
@@ -11,27 +12,23 @@
         )
     ;
     &-name{
-
+        margin: 1em 3em 2em;
+        text-align: left;
         span{
             color: $color-primary;
+            
         }
-
-
     }
 
     &-picture{
-        display: grid;
-        // box-sizing: border-box;
-        justify-content: center;
-        margin: 5px;
-        padding: 0;
+        
+        margin: 4em 2em 2em;
 
         & img{
         border: $color-primary solid 1px;
-        max-width: 340px;
-        max-height: 300px;
-        margin: 0;
-        padding: 0;    
+        max-width: 360px;
+        // max--height: 340px;
+          
         }
 
     }

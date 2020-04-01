@@ -6,6 +6,8 @@
     
 }
 
+
+//media
 @mixin tablet {
     @media (min-width: $tablet){
         @content;
@@ -13,6 +15,7 @@
 
     
 }
+
 @mixin wide-screen {
     @media (min-width: $wide-screen) {
         @content;
@@ -21,6 +24,7 @@
     
 }
 
+//transition
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
     
