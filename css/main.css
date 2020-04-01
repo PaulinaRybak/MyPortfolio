@@ -262,25 +262,6 @@ body {
   padding: 26px 50px;
 }
 
-.main-header .open.burger {
-  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.main-header .open.burger::before {
-  -webkit-transition: top 0.1s 0.14s ease, opacity 0.1s ease;
-  transition: top 0.1s 0.14s ease, opacity 0.1s ease;
-}
-
-.main-header .open.burger:after {
-  -webkit-transition: bottom 0.1s 0.14s ease, -webkit-transform 0.1 cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.14s ease, -webkit-transform 0.1 cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.14s ease, transform 0.1 cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.14s ease, transform 0.1 cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1 cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
 .main-header-button {
   background-color: transparent;
   border: 0;
@@ -317,6 +298,10 @@ body {
   width: 2em;
   height: 3px;
   background-color: #fff;
+  -webkit-transition: -webkit-transform .5s ease-in-out opacity 0.5s linear;
+  transition: -webkit-transform .5s ease-in-out opacity 0.5s linear;
+  transition: transform .5s ease-in-out opacity 0.5s linear;
+  transition: transform .5s ease-in-out opacity 0.5s linear, -webkit-transform .5s ease-in-out opacity 0.5s linear;
 }
 
 .main-header-button .burger::before,
@@ -333,6 +318,20 @@ body {
 
 .main-header-button .burger::after {
   top: 6px;
+}
+
+.main-header .toggle .burger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main-header .toggle ::before {
+  opacity: 0;
+}
+
+.main-header .toggle ::after {
+  -webkit-transform: rotate(90deg) translate(-6px);
+          transform: rotate(90deg) translate(-6px);
 }
 
 .home {
@@ -358,6 +357,7 @@ body {
 }
 
 .home-name {
+  background-color: #be9979;
   margin: 1em 3em 2em;
   text-align: left;
 }

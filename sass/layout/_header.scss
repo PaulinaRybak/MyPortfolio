@@ -53,15 +53,7 @@
                 padding: 26px 50px;
             }
         }
-        &.burger{
-            transition: transform 0.1s cubic-bezier(.55, .055, .675, 0.19);
-            &::before{
-                transition: top 0.1s 0.14s ease, opacity 0.1s ease;
-            }
-            &:after{
-                transition: bottom .1s .14s ease, transform .1 cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            }
-        }
+        
     }
 
     &-button{
@@ -92,7 +84,7 @@
             width: 2em;
             height: 3px;
             background-color: $color-font-light;
-            
+            transition: transform .5s ease-in-out opacity 0.5s linear;
         }
         .burger::before,
         .burger::after {
@@ -100,6 +92,7 @@
             position: absolute;
             left: 0;
             width: 100%;
+            
         }   
 
         .burger::before{ 
@@ -108,5 +101,18 @@
         .burger::after{
             top: 6px;
         }
+    }
+    .toggle {
+        .burger{
+            transform: rotate(45deg); 
+        }
+        ::before{
+            opacity: 0;
+        }
+        ::after{
+            transform: rotate(90deg) translate(-6px); 
+        }
+        
+        
     }
 }

@@ -12,12 +12,14 @@
         )
     ;
     &-name{
+        background-color: $color-primary;
         margin: 1em 3em 2em;
         text-align: left;
         span{
             color: $color-primary;
             
         }
+
     }
 
     &-picture{
