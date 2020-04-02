@@ -4,17 +4,24 @@
     overflow: hidden;
     @include flexCenter(column);
     
-    background: 
-        linear-gradient(
-            to right,
-            rgba($color-primary, 0.4),
-            rgba($color-primary, 0.2)
-        )
-    ;
+    // background: 
+    //     linear-gradient(
+    //         to right,
+    //         rgba($color-primary, 0.4),
+    //         rgba($color-primary, 0.2)
+    //     )
+    // ;
     &-name{
-        background-color: $color-primary;
-        margin: 1em 3em 2em;
+        border: 1px solid $color-primary;
+        margin: 1em 2em 2em;
+        padding: 1em;
         text-align: left;
+        display: flex;
+        max-width: 360px;
+        ::selection {
+            // background: rgb(233, 219, 219);
+            color: $color-primary;
+        }
         span{
             color: $color-primary;
             

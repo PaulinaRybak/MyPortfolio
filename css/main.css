@@ -6,6 +6,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -196,7 +197,6 @@ body {
           flex-direction: column;
   overflow: hidden;
   padding: 0;
-  width: 100vw;
 }
 
 @media (min-width: 767px) {
@@ -230,7 +230,7 @@ body {
 
 @media (min-width: 767px) {
   .main-header .nav-links-a {
-    display: inline;
+    display: block;
   }
 }
 
@@ -240,8 +240,31 @@ body {
 }
 
 .main-header .open {
-  background-color: #f0d29a;
+  display: block;
+  background-color: #be9979;
   height: 100vh;
+  text-align: center;
+  padding-top: 50%;
+}
+
+.main-header .open li:nth-child(1) :hover {
+  background-color: #fff;
+}
+
+.main-header .open li:nth-child(2) :hover {
+  background-color: #f3ece6;
+}
+
+.main-header .open li:nth-child(3) :hover {
+  background-color: #f3e4d6;
+}
+
+.main-header .open li:nth-child(4) :hover {
+  background-color: #f3dcbe;
+}
+
+.main-header .open .nav-links {
+  display: block;
 }
 
 .main-header .open .nav-links-a {
@@ -259,7 +282,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   display: block;
-  padding: 26px 50px;
 }
 
 .main-header-button {
@@ -352,14 +374,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(190, 153, 121, 0.4)), to(rgba(190, 153, 121, 0.2)));
-  background: linear-gradient(to right, rgba(190, 153, 121, 0.4), rgba(190, 153, 121, 0.2));
 }
 
 .home-name {
-  background-color: #be9979;
-  margin: 1em 3em 2em;
+  border: 1px solid #be9979;
+  margin: 1em 2em 2em;
+  padding: 1em;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 360px;
+}
+
+.home-name ::-moz-selection {
+  color: #be9979;
+}
+
+.home-name ::selection {
+  color: #be9979;
 }
 
 .home-name span {

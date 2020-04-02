@@ -6,6 +6,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     display: grid;
     width: 100%;
     background-color: $color-page;

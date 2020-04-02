@@ -19,8 +19,10 @@
         @include flexCenter(column);
         overflow: hidden;
         padding: 0;
-        width: 100vw;
-        
+        // width: fit-content;
+        &-menu{
+
+        }
         @include wide-screen{
             @include flexCenter(row);
             justify-content: space-evenly;
@@ -33,27 +35,43 @@
             color: $color-font-light;
             font-weight: map-get($font-weights, medium);
             @include wide-screen{
-                display: inline;
+                display: block;
             }    
         }
         &-a:hover{
             color: burlywood;
             text-decoration: underline;
+            
         }    
         
     } 
-    .open {
-        background-color: rgb(240, 210, 154);
+    .open  {
+        display: block;
+        background-color: $color-primary;
         height: 100vh;
+        text-align: center;
+        padding-top: 50%;
         
+        li:nth-child(1) :hover{
+            background-color: $color-font-light;
+        }
+        li:nth-child(2) :hover{
+            background-color: rgb(243, 236, 230);
+        }
+        li:nth-child(3) :hover{
+            background-color: rgb(243, 228, 214);
+        }
+        li:nth-child(4) :hover{
+            background-color: rgb(243, 220, 190);
+        }
         .nav-links{
+            display: block;
             &-a{
                 @include flexCenter(column);
                 display: block; 
-                padding: 26px 50px;
+                
             }
         }
-        
     }
 
     &-button{
